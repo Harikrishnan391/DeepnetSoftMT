@@ -14,7 +14,7 @@ const AddMenu = () => {
     { itemName: '', price: '', description: '' },
   ])
 
-  const handleMenuNameChange = (e) => {
+  const handleMenuNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setMenuName(e.target.value)
   }
 
@@ -53,7 +53,6 @@ const AddMenu = () => {
       <div className='max-w-2xl mx-auto p-6 shadow-lg rounded-lg bg-white mt-10 flex '>
         <h2 className='text-2xl font-bold mb-4'>Add Menu</h2>
         <form onSubmit={handleSubmit}>
-          {/* Menu Name Input */}
           <div className='mb-4'>
             <label htmlFor='menuName' className='block text-gray-700'>
               Menu Name

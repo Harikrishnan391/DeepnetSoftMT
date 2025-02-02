@@ -2,17 +2,11 @@ import { useEffect, useState } from 'react'
 import Rectangle2 from '../assets/Rectangle 107.png'
 import MenuItems from './MenuItems'
 import { BASE_URL } from '../config/config'
+import { MenuItem } from '../types/types'
 
 interface Menu {
   _id: string
   name: string
-}
-
-interface MenuItem {
-  _id: string
-  name: string
-  price?: number
-  description: string
 }
 
 const MenuNavBar = () => {
