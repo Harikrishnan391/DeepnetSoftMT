@@ -9,7 +9,7 @@ import Header from '../components/Header'
 const Routers = () => {
   return (
     <>
-      <Router basename='/admin'>
+      <Router basename='/'>
         <Header />
         <Routes>
           <Route
