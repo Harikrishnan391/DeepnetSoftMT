@@ -3,12 +3,8 @@ import Frame1 from '../assets/Frame.png'
 import Frame2 from '../assets/Frame 2.png'
 import Drink1 from '../assets/drink1.png'
 import Cocktail from '../assets/cocktail1 1.png'
+import { MenuItem } from '../types/types'
 
-interface MenuItem {
-  name: string
-  price: number | undefined
-  description: string
-}
 
 interface MenuItemsProps {
   menuTitle: string
