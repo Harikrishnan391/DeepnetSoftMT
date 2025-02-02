@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import AddMenu from '../pages/AddMenu'
 import Banner from '../components/Banner'
 import MenuNavBar from '../components/MenuNavBar'
@@ -9,23 +9,21 @@ import Header from '../components/Header'
 const Routers = () => {
   return (
     <>
-      <Router basename='/'>
-        <Header />
-        <Routes>
-          <Route
-            path='/'
-            element={
-              <>
-                <Banner />
-                <MenuNavBar />
-                <Footer />
-                <Terms />
-              </>
-            }
-          />
-          <Route path='/addMenu' element={<AddMenu />} />
-        </Routes>
-      </Router>
+      <Header />
+      <Routes>
+        <Route
+          path='/'
+          element={
+            <>
+              <Banner />
+              <MenuNavBar />
+              <Footer />
+              <Terms />
+            </>
+          }
+        />
+        <Route path='/addMenu' element={<AddMenu />} />
+      </Routes>
     </>
   )
 }
