@@ -19,4 +19,8 @@ router.get('/menus', getMenus)
 // Get a specific menu with items
 router.get('/menus/:menuId', getMenuById)
 
+router.get('/test', (req, res) => {
+  res.send('Test route is working')
+})
+
 export default router
