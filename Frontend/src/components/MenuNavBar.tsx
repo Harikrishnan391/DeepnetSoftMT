@@ -12,11 +12,12 @@ interface MenuItem {
   _id: string
   name: string
   price?: number
+  description: string
 }
 
 const MenuNavBar = () => {
   const [menuData, setMenuData] = useState<Menu[]>([])
-  const [selectedMenu, setSelectedMenu] = useState<string | null>(null)
+  const [selectedMenu, setSelectedMenu] = useState<string>('')
   const [menuItems, setMenuItems] = useState<MenuItem[]>([])
   const [loading, setLoading] = useState(true)
 
@@ -49,7 +50,6 @@ const MenuNavBar = () => {
       setMenuItems(data.items)
     } catch (err) {
       console.log(err)
-
     } finally {
       setLoading(false)
     }
